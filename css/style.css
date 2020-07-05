@@ -8,6 +8,7 @@ html {
   --white-color: #ffffff;
   --accent-color: #2196f3;
   --footer-background: #2f303a;
+  --hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 section {
@@ -69,8 +70,9 @@ display: block;
 bottom: 0;
 background-color: var(--accent-color);
 border-radius: 2px;
-
 }
+
+
 h1,
 h2,
 h3,
@@ -115,6 +117,7 @@ ul {
 .interactive:hover,
 .interactive:focus {
   color: var(--accent-color);
+  transition: var(--hover);
 }
 .list {
   list-style: none;
@@ -178,13 +181,16 @@ letter-spacing: 0.02em;
 
 .mail-button:hover {
   color: var(--accent-color);
+  transition: var(--hover);
 }
 
 .mail-button:hover .e-mail-address {
   color: var(--accent-color);
+  transition: var(--hover);
 }
 .mail-button:hover .mail-button-icon {
   fill: var(--accent-color);
+  transition: var(--hover);
 }
 
 .phone-icon {
@@ -195,6 +201,7 @@ letter-spacing: 0.02em;
 }
 .mail-button:hover .phone-icon {
   fill: var(--accent-color);
+  transition: var(--hover);
 }
 
 .link-text {
@@ -251,6 +258,26 @@ letter-spacing: 0.02em;
   margin-bottom: 0;
 }
 
+.section-item{
+position: relative;
+}
+
+.section-text {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);;
+  bottom: 0;
+  color: var(--white-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-top: 27px;
+}
 .section-title {
   font-size: 14px;
   line-height: 16px;
@@ -302,6 +329,7 @@ h4 {
   1px 4px 6px rgba(0, 0, 0, 0.16), 
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: var(--hover);
 }
 
 .footer {
@@ -358,6 +386,7 @@ h4 {
 .button-client:hover,
 .button-client:focus {
   border-color: var(--accent-color);
+  transition: var(--hover);
 }
 
 .button-icon-one {
@@ -367,6 +396,7 @@ h4 {
 }
 .button-client:hover .button-icon-one {
   fill: var(--accent-color);
+  transition: var(--hover);
   
 }
 
@@ -378,6 +408,7 @@ fill: #AFB1B8;
 
 .button-client:hover .button-icon-two {
   fill: var(--accent-color);
+  transition: var(--hover);
 }
 
 .button-icon-three {
@@ -388,6 +419,7 @@ fill: #AFB1B8;
 
 .button-client:hover .button-icon-three {
   fill: var(--accent-color);
+  transition: var(--hover);
 }
 
 .button-icon-four {
@@ -398,6 +430,7 @@ fill: #AFB1B8;
 
 .button-client:hover .button-icon-four {
   fill: var(--accent-color);
+  transition: var(--hover);
 }
 
 .button-icon-five {
@@ -408,6 +441,7 @@ fill: #AFB1B8;
 
 .button-client:hover .button-icon-five {
   fill: var(--accent-color);
+  transition: var(--hover);
   
 }
 
@@ -419,6 +453,7 @@ fill: #AFB1B8;
 
 .button-client:hover .button-icon-six {
   fill: var(--accent-color);
+  transition: var(--hover);
   
 }
 .join {
@@ -543,11 +578,14 @@ fill: #AFB1B8;
 
 .social:hover{
 background-color: var(--accent-color);
+transition: var(--hover);
 }
 .social:hover .social-icon {
 fill: white;
+transition: var(--hover);
 }
 
 .social-footer:hover {
 background-color:  var(--accent-color);
+transition: var(--hover);
 }
