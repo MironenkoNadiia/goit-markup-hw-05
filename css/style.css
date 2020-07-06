@@ -13,10 +13,12 @@ html {
 
 section {
   margin-bottom: 94px;
+  
 }
 
 .container {
   
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -31,7 +33,9 @@ section {
   padding-bottom: 94px;
 }
 .no-margin {
+  position: absolute;
   margin-bottom: 0;
+  opacity: 0;
 }
 
 .flex {
@@ -52,7 +56,9 @@ section {
   justify-content: space-evenly;
 }
 .no-mr {
+  
   margin-left: 0;
+  
 }
 
 .current{
