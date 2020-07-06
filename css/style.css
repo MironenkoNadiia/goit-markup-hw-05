@@ -33,8 +33,11 @@ section {
   padding-bottom: 94px;
 }
 .no-margin {
-  position: absolute;
   margin-bottom: 0;
+  
+}
+.opacity {
+  position: absolute;
   opacity: 0;
 }
 
