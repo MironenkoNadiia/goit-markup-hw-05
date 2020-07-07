@@ -350,7 +350,9 @@ h4 {
   border-radius: 4px;
   background-color: #F5F4FA;
   color: var(--secondary-color);
-  font: inherit;
+  font-weight: 700;
+  font-size: 1.6;
+
   cursor: pointer;
 }
 
