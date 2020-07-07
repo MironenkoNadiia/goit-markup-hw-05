@@ -415,6 +415,7 @@ padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 transform: translateY(100%);
 pointer-events: none;
+transition: var(--hover);
 }
 .projects-description {
   display: block;
@@ -434,6 +435,7 @@ top: 63px;
   transform: translateY(0%);
   transition: var(--hover);
   color: var(--white-color);
+  
 }
 
 
