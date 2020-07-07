@@ -338,7 +338,8 @@ h4 {
   border-radius: 0px 0px 4px 4px;
 }
 .border {
-  border: 1px solid #EEEEEE
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
 }
 .portfolio-nav {
   display: inline-flex;
@@ -373,7 +374,7 @@ h4 {
   margin-bottom: 20px;
 }
 
-.projects-description {
+/* .projects-description {
   content: "";
   position: absolute;
   top: 50%;
@@ -395,13 +396,13 @@ padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
   color: var(--white-color);
-}
-/* .wow {
+} */
+.wow {
   position: relative;
+  overflow: hidden;
 }
-.wow::after {
+.projects-overlay {
   display: inline-block;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -409,7 +410,7 @@ padding: 63px 24px;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 transform: translateY(100%);
-
+pointer-events: none;
 }
 .projects-description {
   display: block;
@@ -425,10 +426,11 @@ letter-spacing: 0.03em;
 top: 63px;
 }
 
-.wow:hover::after {
+.border:hover .projects-overlay {
   transform: translateY(0%);
   transition: var(--hover);
-} */
+  color: var(--white-color);
+}
 
 
 
