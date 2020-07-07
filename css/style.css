@@ -340,6 +340,24 @@ h4 {
 .border {
   border: 1px solid #EEEEEE
 }
+.portfolio-nav {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: var (var(--secondary-color));
+  font: inherit;
+  cursor: pointer;
+}
+
+.portfolio-nav:hover,
+.portfolio-nav:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  transition: var(--hover);
+}
 
 .border:hover,
 .border:focus {
@@ -378,22 +396,42 @@ padding: 63px 24px;
   opacity: 1;
   color: var(--white-color);
 }
-/* .project-description::after {
-position: absolute;
-  content: " ";
+/* .wow {
+  position: relative;
+}
+.wow::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+transform: translateY(100%);
+
+}
+.projects-description {
   display: block;
-width: 100%;
-height: 100%;
-background-color: var(--accent-color);
-left: 0;
-bottom: 0;
-transition: var(--hover);
-transform: scaleY(0);
+  position: absolute;
+  font-weight: 400px;
+  opacity: 1;
+  width: 370px;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+line-height: 1.55;
+letter-spacing: 0.03em;
+top: 63px;
 }
 
-.project-description:hover::after{
-  transform: scaleY(1);
+.wow:hover::after {
+  transform: translateY(0%);
+  transition: var(--hover);
 } */
+
+
+
 .footer {
   font-weight: 700;
   font-size: 14px;
