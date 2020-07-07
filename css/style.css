@@ -134,6 +134,7 @@ ul {
 }
 .nav-text {
   color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
   margin-left: 50px;
   display: block;
@@ -348,7 +349,7 @@ h4 {
   padding: 6px 22px;
   border-radius: 4px;
   background-color: #F5F4FA;
-  color: var (var(--secondary-color));
+  color: var(--secondary-color);
   font: inherit;
   cursor: pointer;
 }
